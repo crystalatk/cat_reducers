@@ -1,15 +1,12 @@
-import EatButton from "../containers/EatContainer";
-import NapButton from "../containers/NapContainer";
-import PlayButton from "../containers/PlayContainer";
+import Input from "../containers/InputContainer";
+import Buttons from "../containers/ButtonContainer";
 import Output from "../containers/OutputContainer";
 
 const Cat = () => (
   <>
-    <h1>Here is Fluffy.</h1>
+    <Input />
     <Output />
-    <EatButton />
-    <NapButton />
-    <PlayButton />
+    <Buttons />
   </>
 );
 

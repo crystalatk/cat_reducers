@@ -1,9 +1,9 @@
 import { createStore } from "redux";
 import { observer } from "./reducers";
-import { ACTION_NAP } from "./actionTypes";
 
 const defaultState = {
-  activity: ACTION_NAP,
+  activity: "Meowing",
+  name: "Fluffy",
 };
 
 export const store = createStore(

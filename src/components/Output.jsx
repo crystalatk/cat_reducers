@@ -1,8 +1,9 @@
 const Output = (props) => {
-  console.log("THIS IS THE ACTION: ", props.activity);
   return (
     <div>
-      <h3>Fluffy is {props.activity}</h3>
+      <h3>
+        {props.name} is {props.activity}
+      </h3>
     </div>
   );
 };
