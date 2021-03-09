@@ -1,11 +1,11 @@
 import Input from "../components/Input";
 import { connect } from "react-redux";
-import { setName } from "../redux/actions";
+import { setNewCat } from "../redux/actions";
 
 const mapDispatchToProps = (dispatch) => {
   return {
-    handleOnChange: (name) => {
-      dispatch(setName(name));
+    handleClick: (name, activity) => {
+      dispatch(setNewCat(name, activity));
     },
   };
 };
