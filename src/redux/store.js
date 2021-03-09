@@ -2,8 +2,16 @@ import { createStore } from "redux";
 import { observer } from "./reducers";
 
 const defaultState = {
-  activity: "Meowing",
-  name: "Fluffy",
+  cats: {
+    1001: {
+      name: "Midge",
+      activity: "meowing",
+    },
+    1002: {
+      name: "Marley",
+      activity: "eating",
+    },
+  },
 };
 
 export const store = createStore(
