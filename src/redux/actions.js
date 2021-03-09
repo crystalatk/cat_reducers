@@ -16,6 +16,9 @@ export const setNewCat = (newCat) => {
     Math.random().toString(36).substring(2, 15);
   return {
     type: ACTION_ADD_CAT,
-    payload: { newCat, id },
+    payload: {
+      newCat,
+      id,
+    },
   };
 };

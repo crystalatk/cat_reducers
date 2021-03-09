@@ -5,7 +5,8 @@ import { setNewCat } from "../redux/actions";
 const mapDispatchToProps = (dispatch) => {
   return {
     handleClick: (name, activity) => {
-      dispatch(setNewCat(name, activity));
+      const newCat = { name, activity };
+      dispatch(setNewCat(newCat));
     },
   };
 };

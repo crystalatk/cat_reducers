@@ -1,7 +1,7 @@
 import { ACTION_SET_ACTIVITY, ACTION_ADD_CAT } from "./actionTypes";
 
 export const observer = (state, action) => {
-  const { id, activity, newCat } = action.payload;
+  const { id, activity, newCat } = action.payload || {};
   switch (action.type) {
     case ACTION_SET_ACTIVITY:
       return {
